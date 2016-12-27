@@ -1457,6 +1457,8 @@ _.info = {
             return 'Windows';
         } else if (/(iPhone|iPad|iPod)/.test(a)) {
             return 'iOS';
+        } else if (/FxOS/.test(a)) {
+            return 'Firefox OS';
         } else if (/Android/.test(a)) {
             return 'Android';
         } else if (/(BlackBerry|PlayBook|BB10)/i.test(a)) {
@@ -1465,6 +1467,14 @@ _.info = {
             return 'Mac OS X';
         } else if (/Linux/.test(a)) {
             return 'Linux';
+        } else if (/CrOS/.test(a)) {
+            return 'Chrome OS';
+        } else if (/FreeBSD/.test(a)) {
+            return 'FreeBSD';
+        } else if (/OpenBSD/.test(a)) {
+            return 'OpenBSD';
+        } else if (/NetBSD/.test(a)) {
+            return 'NetBSD';
         } else {
             return '';
         }
